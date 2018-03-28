@@ -7,23 +7,53 @@
 //
 
 #import "ViewController.h"
+#import "LHTableViewCell.h"
+#import "LHViewModel.h"
 
-@interface ViewController ()
 
+/**
+ 写这个MVVM其实也是一种思想，主要在使用的过程中可以任意的变通，其实MVC也是挺好用的。
+ */
+@interface ViewController ()<LHBaseViewModelDelegate>
+@property (nonatomic, strong) LHViewModel *viewModel;
+@property (nonatomic, strong) UITableView *tableView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self setUpTableView];
 }
 
+- (void)setUpTableView {
+    
+    if (!self.tableView) {
+        self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    }
+    [self.view addSubview:self.tableView];
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.viewModel viewModelSetViewWithView:self.tableView];
+    
+    __weak  ViewController  *weakSelf = self;
+    [self.viewModel getDataFromNetCompletionHandler:^(NSError *error) {
+        if (!error) {
+            [weakSelf.tableView reloadData];
+        }
+    }];
 }
 
+- (LHViewModel *)viewModel {
+    if (!_viewModel) {
+        _viewModel = [[LHViewModel alloc] initWithViewModelDeleegate:self];
+    }
+    return _viewModel;
+}
 
+#pragma mark LHBaseViewModelDelegate
+- (void)didTransferActionWithViewModel:(LHBaseViewModel *)viewModel view:(UIView *)view object:(id)object {
+    if (viewModel == self.viewModel) {
+        NSLog(@"%@", object);
+    }
+}
 @end

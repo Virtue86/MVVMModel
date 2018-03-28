@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D5FEDFECA6B1D6EC5466523 /* libPods-MVVMModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FC09646E0EDDF9635CA891 /* libPods-MVVMModel.a */; };
+		907344E3206B4512007496A8 /* LHNetRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 907344E2206B4512007496A8 /* LHNetRequestManager.m */; };
+		907344E6206B457A007496A8 /* LHBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 907344E5206B457A007496A8 /* LHBaseModel.m */; };
+		907344E9206B4589007496A8 /* LHBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 907344E8206B4589007496A8 /* LHBaseViewModel.m */; };
 		90A1A357206B390F00B99EA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A1A356206B390F00B99EA0 /* AppDelegate.m */; };
 		90A1A35D206B390F00B99EA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A1A35B206B390F00B99EA0 /* Main.storyboard */; };
 		90A1A35F206B390F00B99EA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90A1A35E206B390F00B99EA0 /* Assets.xcassets */; };
@@ -20,6 +24,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		690D5228A71D4B2555605DCD /* Pods-MVVMModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMModel/Pods-MVVMModel.debug.xcconfig"; sourceTree = "<group>"; };
+		75FC09646E0EDDF9635CA891 /* libPods-MVVMModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMModel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		907344E1206B4512007496A8 /* LHNetRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHNetRequestManager.h; sourceTree = "<group>"; };
+		907344E2206B4512007496A8 /* LHNetRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHNetRequestManager.m; sourceTree = "<group>"; };
+		907344E4206B457A007496A8 /* LHBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHBaseModel.h; sourceTree = "<group>"; };
+		907344E5206B457A007496A8 /* LHBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHBaseModel.m; sourceTree = "<group>"; };
+		907344E7206B4589007496A8 /* LHBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHBaseViewModel.h; sourceTree = "<group>"; };
+		907344E8206B4589007496A8 /* LHBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHBaseViewModel.m; sourceTree = "<group>"; };
+		907344EA206B6C93007496A8 /* ILHBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILHBaseViewModel.h; sourceTree = "<group>"; };
 		90A1A352206B390F00B99EA0 /* MVVMModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A1A355206B390F00B99EA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90A1A356206B390F00B99EA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,6 +50,7 @@
 		90A1A378206B39D600B99EA0 /* LHModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHModel.m; sourceTree = "<group>"; };
 		90A1A37A206B3A2900B99EA0 /* LHViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHViewModel.h; sourceTree = "<group>"; };
 		90A1A37B206B3A2900B99EA0 /* LHViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHViewModel.m; sourceTree = "<group>"; };
+		A7F75FD07B2CBF4F8699C034 /* Pods-MVVMModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMModel/Pods-MVVMModel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,17 +58,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5FEDFECA6B1D6EC5466523 /* libPods-MVVMModel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34404C46D4CDF5EFCF19A665 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				690D5228A71D4B2555605DCD /* Pods-MVVMModel.debug.xcconfig */,
+				A7F75FD07B2CBF4F8699C034 /* Pods-MVVMModel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9073449C206B44F5007496A8 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
 		90A1A349206B390F00B99EA0 = {
 			isa = PBXGroup;
 			children = (
 				90A1A354206B390F00B99EA0 /* MVVMModel */,
 				90A1A353206B390F00B99EA0 /* Products */,
+				34404C46D4CDF5EFCF19A665 /* Pods */,
+				979678BDB7704A3646CC15C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +102,7 @@
 		90A1A354206B390F00B99EA0 /* MVVMModel */ = {
 			isa = PBXGroup;
 			children = (
+				9073449C206B44F5007496A8 /* Vender */,
 				90A1A37E206B3A6400B99EA0 /* AFNManager */,
 				90A1A37D206B3A6400B99EA0 /* BaseModel */,
 				90A1A37F206B3A6400B99EA0 /* BaseViewModel */,
@@ -127,6 +161,8 @@
 		90A1A37D206B3A6400B99EA0 /* BaseModel */ = {
 			isa = PBXGroup;
 			children = (
+				907344E4206B457A007496A8 /* LHBaseModel.h */,
+				907344E5206B457A007496A8 /* LHBaseModel.m */,
 			);
 			path = BaseModel;
 			sourceTree = "<group>";
@@ -134,6 +170,8 @@
 		90A1A37E206B3A6400B99EA0 /* AFNManager */ = {
 			isa = PBXGroup;
 			children = (
+				907344E1206B4512007496A8 /* LHNetRequestManager.h */,
+				907344E2206B4512007496A8 /* LHNetRequestManager.m */,
 			);
 			path = AFNManager;
 			sourceTree = "<group>";
@@ -141,8 +179,19 @@
 		90A1A37F206B3A6400B99EA0 /* BaseViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				907344E7206B4589007496A8 /* LHBaseViewModel.h */,
+				907344E8206B4589007496A8 /* LHBaseViewModel.m */,
+				907344EA206B6C93007496A8 /* ILHBaseViewModel.h */,
 			);
 			path = BaseViewModel;
+			sourceTree = "<group>";
+		};
+		979678BDB7704A3646CC15C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75FC09646E0EDDF9635CA891 /* libPods-MVVMModel.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90A1A368206B390F00B99EA0 /* Build configuration list for PBXNativeTarget "MVVMModel" */;
 			buildPhases = (
+				FF91C24F07E8A26A5491EEA6 /* [CP] Check Pods Manifest.lock */,
 				90A1A34E206B390F00B99EA0 /* Sources */,
 				90A1A34F206B390F00B99EA0 /* Frameworks */,
 				90A1A350206B390F00B99EA0 /* Resources */,
+				CAA424D0F150D7E57CA5E658 /* [CP] Embed Pods Frameworks */,
+				3DA227594DBD4FFECF5DFA3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +264,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3DA227594DBD4FFECF5DFA3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MVVMModel/Pods-MVVMModel-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVMModel/Pods-MVVMModel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAA424D0F150D7E57CA5E658 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVMModel/Pods-MVVMModel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF91C24F07E8A26A5491EEA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVMModel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		90A1A34E206B390F00B99EA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -220,8 +326,11 @@
 				90A1A370206B398000B99EA0 /* ViewController.m in Sources */,
 				90A1A379206B39D600B99EA0 /* LHModel.m in Sources */,
 				90A1A37C206B3A2900B99EA0 /* LHViewModel.m in Sources */,
+				907344E3206B4512007496A8 /* LHNetRequestManager.m in Sources */,
 				90A1A365206B390F00B99EA0 /* main.m in Sources */,
 				90A1A357206B390F00B99EA0 /* AppDelegate.m in Sources */,
+				907344E9206B4589007496A8 /* LHBaseViewModel.m in Sources */,
+				907344E6206B457A007496A8 /* LHBaseModel.m in Sources */,
 				90A1A375206B39C600B99EA0 /* LHTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +463,7 @@
 		};
 		90A1A369206B390F00B99EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 690D5228A71D4B2555605DCD /* Pods-MVVMModel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -368,6 +478,7 @@
 		};
 		90A1A36A206B390F00B99EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7F75FD07B2CBF4F8699C034 /* Pods-MVVMModel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

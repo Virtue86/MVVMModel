@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LHBaseModel.h"
 
-@interface LHModel : NSObject
-
+@interface LHModel : LHBaseModel
+@property (nonatomic, copy) NSString *url;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, assign) int count;
+@property (nonatomic, copy) NSString *lastTime;
 @end

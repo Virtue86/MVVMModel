@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class LHModel;
 @interface LHTableViewCell : UITableViewCell
-
+@property (nonatomic, strong) LHModel *model;
 @end

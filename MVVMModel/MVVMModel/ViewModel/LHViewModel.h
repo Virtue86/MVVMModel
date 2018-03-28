@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LHBaseViewModel.h"
 
-@interface LHViewModel : NSObject
+@interface LHViewModel : LHBaseViewModel
 
 @end

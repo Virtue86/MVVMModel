@@ -20,5 +20,7 @@
 
     // Configure the view for the selected state
 }
-
+- (void)setModel:(LHModel *)model {
+    _model = model;
+}
 @end
